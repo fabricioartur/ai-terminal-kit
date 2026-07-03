@@ -51,9 +51,13 @@ brew bundle --file=Brewfile
 
 ### More demos
 
-| `brew bundle check` — confirms all 24 tools are actually satisfied | `git show` rendered through `git-delta` |
-|---|---|
-| ![Verifying the Brewfile is satisfied](verify.gif) | ![A commit diff rendered readable by git-delta](delta.gif) |
+**`brew bundle check`** — confirms all 24 tools are actually satisfied:
+
+![Verifying the Brewfile is satisfied](verify.gif)
+
+**`git show`** rendered through **`git-delta`**:
+
+![A commit diff rendered readable by git-delta](delta.gif)
 
 All three GIFs in this README were recorded with [`vhs`](https://github.com/charmbracelet/vhs) from the `.tape` scripts in this repo (`demo.tape`, `verify.tape`, `delta.tape`) — reproducible, not hand-edited.
 
