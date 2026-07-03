@@ -6,7 +6,7 @@
 
 > Terminal tools that 16 independent AI agents agreed are essential — verified on a real machine, not just recommended.
 
-AI Terminal Kit is a reproducible Homebrew setup for people who use AI agents beyond chat: local terminals, real repositories, build/test loops, scripts, APIs, and developer workflows. 23 tools, one command, verified with `command -v` — not just copy-pasted from a model's answer.
+AI Terminal Kit is a reproducible Homebrew setup for people who use AI agents beyond chat: local terminals, real repositories, build/test loops, scripts, APIs, and developer workflows. 24 tools, one command, verified with `command -v` — not just copy-pasted from a model's answer.
 
 ## The experiment
 
@@ -23,16 +23,16 @@ Full write-up: **[fabricioartur.com/blog/16-ai-agents-terminal-tools-consensus](
 | Category | Tools | Why it matters to an agent |
 |---|---|---|
 | Find information faster | `ripgrep`, `fd`, `ast-grep`, `bat`, `eza`, `tree`, `tokei` | Removes blind exploration — exact files, symbols, and patterns instead of reading everything |
-| Reduce noise before it reaches the model | `yq`, `httpie` | Structured data is cheaper to reason over than raw text (`jq` is usually native on modern macOS — see [CONSENSUS.md](CONSENSUS.md)) |
+| Reduce noise before it reaches the model | `yq`, `httpie` — plus native/optional helpers like `jq` and `pandoc` | Structured data is cheaper to reason over than raw text (`jq` is usually native on modern macOS, `pandoc` is optional — see [CONSENSUS.md](CONSENSUS.md)) |
 | Make environments reproducible | `tmux`, `direnv`, `mise`, `uv`, `zoxide`, `fzf` | Predictable environments mean fewer retries and no "works on my machine" |
-| Treat Git/GitHub and validation as terminal-native | `gh`, `git-delta`, `lazygit`, `act`, `semgrep`, `hyperfine`, `btop` | Agents inspect changes, validate claims, and measure whether an "optimization" actually helped |
+| Treat Git/GitHub and validation as terminal-native | `git-delta`, `lazygit`, `act`, `semgrep`, `hyperfine`, `btop` — plus `gh` (recommended, not bundled) | Agents inspect changes, validate claims, and measure whether an "optimization" actually helped |
 | Docs and project commands | `tldr`, `glow`, `just` | Standardized, guessable commands instead of rediscovering how to test/build every session |
 
-Full reasoning per category, including tools deliberately left out and why: **[CONSENSUS.md](CONSENSUS.md)**.
+`gh` is intentionally not in the `Brewfile` — it's highly recommended, but most people already have it. See [CONSENSUS.md](CONSENSUS.md) for the full reasoning per category, including every tool deliberately left out and why.
 
 ## What's inside
 
-- [`Brewfile`](Brewfile) — the recommended core kit (23 tools), ready to install with Homebrew Bundle
+- [`Brewfile`](Brewfile) — the recommended core kit (24 tools), ready to install with Homebrew Bundle
 - [`PROMPT.md`](PROMPT.md) — the exact prompt used to survey the 16 agents
 - [`CONSENSUS.md`](CONSENSUS.md) — why these categories appeared repeatedly across agent responses
 - [`LICENSE`](LICENSE) — MIT
