@@ -8,6 +8,8 @@
 
 AI Terminal Kit is a reproducible Homebrew setup for people who use AI agents beyond chat: local terminals, real repositories, build/test loops, scripts, APIs, and developer workflows. 24 tools, one command, verified with `command -v` — not just copy-pasted from a model's answer.
 
+![Demo: inspecting the Brewfile, searching with ripgrep, and verifying jq](demo.gif)
+
 ## The experiment
 
 I use several AI agents daily — Claude Code, OpenAI Codex, Gemini CLI, Grok, Cursor, Opencode, among others — all with access to my terminal, browser, and machine. Instead of deciding on my own what to install, I asked all 16 of them the same question, independently:
