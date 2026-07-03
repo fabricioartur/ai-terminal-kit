@@ -12,7 +12,7 @@ I use several AI agents daily — Claude Code, OpenAI Codex, Gemini CLI, Grok, C
 
 The answers converged strongly around a core set of tools, with some genuine disagreement on pace of adoption, multi-agent orchestration, and heavier infrastructure. I cross-checked every claim on the actual machine with `command -v` and `brew list` — and caught real errors along the way (a tool reported as "installed via Homebrew" that was actually native to macOS, package names confused with actual commands).
 
-Full write-up: [O que 16 agentes de IA concordam ser essencial no seu terminal e onde discordam](https://app.notion.com/p/fartur/O-que-16-agentes-de-IA-concordam-ser-essencial-no-seu-terminal-e-onde-discordam-392e769590bb802aa674d2cd07eb000c)
+Full write-up: **[fabricioartur.com/blog/16-ai-agents-terminal-tools-consensus](https://fabricioartur.com/blog/16-ai-agents-terminal-tools-consensus)**
 
 ## What's inside
 
