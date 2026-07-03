@@ -49,6 +49,14 @@ cd ai-terminal-kit
 brew bundle --file=Brewfile
 ```
 
+### More demos
+
+| `brew bundle check` — confirms all 24 tools are actually satisfied | `git show` rendered through `git-delta` |
+|---|---|
+| ![Verifying the Brewfile is satisfied](verify.gif) | ![A commit diff rendered readable by git-delta](delta.gif) |
+
+All three GIFs in this README were recorded with [`vhs`](https://github.com/charmbracelet/vhs) from the `.tape` scripts in this repo (`demo.tape`, `verify.tape`, `delta.tape`) — reproducible, not hand-edited.
+
 ## Why these tools
 
 Each tool in the kit reduces one of four bottlenecks for an autonomous agent working in a terminal: finding information fast, reducing noise before it reaches the model, making commands and environments reproducible, and giving reliable visibility into what's happening. Details and reasoning for each tool are in the full article and in [CONSENSUS.md](CONSENSUS.md).
